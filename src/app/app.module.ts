@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutHeaderComponent } from './components/about-header/about-header.component';
+import { Check, LucideAngularModule, MapPin } from 'lucide-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutHeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LucideAngularModule.pick({ MapPin, Check })
   ],
   providers: [],
   bootstrap: [AppComponent]
