@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
-import { Check, ExternalLink, Github, Instagram, LucideAngularModule, MapPin, Menu, Phone } from 'lucide-angular';
+import { Check, ExternalLink, Github, Instagram, LucideAngularModule, Mail, MapPin, Menu, Phone } from 'lucide-angular';
 import { AboutBodyComponent } from './components/about-body/about-body.component';
 import { ProjectComponent } from './components/project/project.component';
 import { WorkComponent } from './components/work/work.component';
 import { CommonModule } from '@angular/common';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { CommonModule } from '@angular/common';
     AboutHeaderComponent,
     AboutBodyComponent,
     ProjectComponent,
-    WorkComponent
+    WorkComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({ MapPin, Check, Github, Instagram, Phone, Menu, ExternalLink}),
+    LucideAngularModule.pick({ MapPin, Check, Github, Instagram, Phone, Menu, ExternalLink, Mail, }),
     CommonModule
   ],
   providers: [],
