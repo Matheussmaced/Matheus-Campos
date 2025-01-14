@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
 import { Check, Github, Instagram, LucideAngularModule, MapPin, Phone } from 'lucide-angular';
+import { AboutBodyComponent } from './components/about-body/about-body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    AboutHeaderComponent
+    AboutHeaderComponent,
+    AboutBodyComponent
   ],
   imports: [
     BrowserModule,
