@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
 import { Check, Github, Instagram, LucideAngularModule, MapPin, Menu, Phone } from 'lucide-angular';
 import { AboutBodyComponent } from './components/about-body/about-body.component';
+import { ProjectComponent } from './components/project/project.component';
+import { WorkComponent } from './components/work/work.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AboutBodyComponent } from './components/about-body/about-body.component
     HomeComponent,
     HeaderComponent,
     AboutHeaderComponent,
-    AboutBodyComponent
+    AboutBodyComponent,
+    ProjectComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
