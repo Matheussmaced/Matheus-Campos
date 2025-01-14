@@ -4,11 +4,28 @@
   </div>
 
   <div class="navigation-container">
-    <nav>
+    <nav class="nav-bar-desktop">
       <a href="">Sobre</a>
       <a href="">Trabalho</a>
-      <a href="">Tecnólogias</a>
+      <a href="">Tecnologias</a>
       <a href="">Contatos</a>
     </nav>
+  </div>
+  <lucide-icon name="menu" id="menu-burguer" size="35" (click)="openMenu()"></lucide-icon>
+
+
+  <div class="modal" [class.active]="isMenuOpen">
+    <div class="modal-content">
+      <button class="close-btn" (click)="closeMenu()">X</button>
+      <nav>
+        <div class="logo">
+          <img src="../LOGO-MATHEUS.png" alt="" width="70">
+        </div>
+        <a href="" id="first-a">Sobre</a>
+        <a href="">Trabalho</a>
+        <a href="">Tecnologias</a>
+        <a href="">Contatos</a>
+      </nav>
+    </div>
   </div>
 </main>
