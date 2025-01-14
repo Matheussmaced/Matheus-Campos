@@ -1,0 +1,12 @@
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+app-project {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}

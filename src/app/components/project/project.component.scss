@@ -4,7 +4,7 @@ main{
   display: flex;
   align-items: center;
   gap: 3rem;
-  width: 60%;
+  width: 74rem;
   padding-right: 3rem;
 
   background-color: $gray-dark-100;
@@ -18,6 +18,37 @@ main{
 
     box-shadow: 2px 5px 5px 2px $gray-dark-50;
   }
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse !important;
+  align-items: center;
+  gap: 3rem;
+  width: 74rem;
+  padding: 0 0 0 3rem;
+
+  background-color: $gray-dark-100;
+  border-radius: 1.5rem;
+
+  margin: 3rem auto 0;
+
+  img{
+    width: 35rem;
+    border-radius: 1.5rem;
+
+    box-shadow: 2px 5px 5px 2px $gray-dark-50;
+  }
+}
+
+.img-reverse{
+  background-color: $gray-dark-200;
+  border-radius: 0 1.5rem 1.5rem 0 !important;
+  padding: 3rem;
+}
+
+.link{
+  margin-top: 1rem;
 }
 
 .img-container{
@@ -41,12 +72,15 @@ main{
 
 .tech{
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 3rem;
 
   span{
     background-color: $gray-dark-200;
+    text-align: center;
     padding: 0.7rem;
+    flex: 1 1 calc((100% - 3 * 1rem) / 4);
 
     border-radius: 1.2rem;
   }

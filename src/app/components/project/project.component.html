@@ -1,17 +1,15 @@
-<main>
-  <div class="img-container">
-    <img src="../projeto-1.jpg" alt="">
+<main class={{reverse}}>
+  <div [ngClass]="[imgReverse, 'img-container']">
+    <img src={{image}} alt="">
   </div>
 
   <div class="infos">
-    <h2>Projeto de cadastro de clientes e pedidos</h2>
+    <h2> {{title}} </h2>
 
-    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</span>
+    <span> {{description}} </span>
 
     <div class="tech">
-      <span>NEXT.JS</span>
-      <span>TypeScript</span>
-      <span>PostgreSQL</span>
+      <span *ngFor="let tech of technologies"> {{tech }} </span>
     </div>
   </div>
 </main>
