@@ -85,3 +85,76 @@ main{
     border-radius: 1.2rem;
   }
 }
+
+@media screen and (max-width: 1300px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+    padding-right: 0 !important;
+
+    background-color: $gray-dark-100;
+    border-radius: 1.5rem;
+
+    margin: 3rem auto 0;
+
+    img{
+      width: 100%;
+      border-radius: 0.5rem;
+      margin: 0 auto;
+
+      box-shadow: 2px 5px 5px 2px $gray-dark-50;
+    }
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 3rem;
+    width: 95%;
+    padding: 0 !important;
+
+    background-color: $gray-dark-100;
+    border-radius: 1.5rem;
+
+    margin: 3rem auto 0;
+
+    img{
+      width: 100%;
+      border-radius: 1.5rem;
+
+      box-shadow: 2px 5px 5px 2px $gray-dark-50;
+    }
+  }
+
+  .img-container{
+    background-color: $gray-dark-200;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .img-reverse{
+    background-color: $gray-dark-200;
+    border-radius: 1.5rem 1.5rem 0 0 !important;
+    padding: 2rem;
+  }
+
+  .infos{
+    padding: 0 0.7rem 3rem 0.7rem;
+
+    h2{
+      font-size: 1.3rem;
+      color: $emerald-500;
+      margin-bottom: 3rem;
+    }
+
+    span{
+      font-size: 0.9rem;
+      color: $gray-dark-500;
+    }
+  }
+}
