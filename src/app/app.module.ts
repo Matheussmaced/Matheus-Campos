@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutHeaderComponent } from './components/about-header/about-header.component';
-import { Check, LucideAngularModule, MapPin } from 'lucide-angular';
+import { Check, Github, Instagram, LucideAngularModule, MapPin, Phone } from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { Check, LucideAngularModule, MapPin } from 'lucide-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({ MapPin, Check })
+    LucideAngularModule.pick({ MapPin, Check, Github, Instagram, Phone})
   ],
   providers: [],
   bootstrap: [AppComponent]

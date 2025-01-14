@@ -1,1 +1,38 @@
 @use '../../../theme/variables.scss' as *;
+
+main{
+  margin: 4rem auto 0;
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .description{
+    width: 50rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+img{
+  width: 21rem;
+  border: solid 0.5rem $gray-dark-default;
+
+  box-shadow:  35px 50px 0 -5px $gray-dark-200;
+}
