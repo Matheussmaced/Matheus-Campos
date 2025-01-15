@@ -1,47 +1,58 @@
 @use '../../../theme/variables.scss' as *;
 
-main{
-  h3{
+main {
+  h3 {
     color: $gray-dark-600;
     text-align: center;
     font-weight: 300;
-
     margin: 4rem 0 1rem;
   }
 }
 
-.icons-skills{
+.icons-skills {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   flex-wrap: wrap;
   gap: 2rem;
   width: 80%;
   margin: 0 auto;
-
   justify-items: center;
   align-items: center;
 
-  .icon{
+  .icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     margin-top: 3rem;
-
     gap: 1rem;
-
-    img{
+    img {
       margin: 0 auto;
     }
-
-    span{
+    span {
       width: 5rem;
       text-align: center;
     }
-
-    .express{
+    .express {
       margin-top: 0.8rem;
     }
+
+    animation: moveHorizontal 6s ease-in-out infinite alternate;
+  }
+}
+
+.express{
+  padding-bottom: 1rem;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-10px); /* Começa movendo para a esquerda */
+  }
+  50% {
+    transform: translateX(10px); /* Move para a direita */
+  }
+  100% {
+    transform: translateX(-10px); /* Volta para a esquerda */
   }
 }
 
