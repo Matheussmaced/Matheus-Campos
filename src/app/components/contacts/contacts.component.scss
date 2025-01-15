@@ -10,7 +10,7 @@ main{
     width: 40rem;
     margin: 0 auto 2rem auto;
     font-weight: 200;
-    padding-top: 1rem;
+    padding-top: 4rem;
 
     color: $gray-light-400;
   }
@@ -18,6 +18,23 @@ main{
   p{
     margin-top: 1rem;
     color: $gray-light-400;
+  }
+
+  .contact{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    position: relative;
+    top: 2rem;
+    width: 12rem;
+    padding: 0.5rem 2rem;
+    border-radius: 18px;
+    font-weight: 300;
+
+    background-color: $gray-dark-200;
   }
 }
 

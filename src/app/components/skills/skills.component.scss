@@ -7,6 +7,23 @@ main {
     font-weight: 300;
     margin: 4rem 0 1rem;
   }
+
+  .skills{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    position: relative;
+    top: 2rem;
+    width: 5rem;
+    padding: 0.5rem 4rem;
+    border-radius: 18px;
+    font-weight: 300;
+
+    background-color: $gray-dark-200;
+  }
 }
 
 .icons-skills {
@@ -46,13 +63,13 @@ main {
 
 @keyframes moveHorizontal {
   0% {
-    transform: translateX(-10px); /* Começa movendo para a esquerda */
+    transform: translateX(-20px); /* Começa movendo para a esquerda */
   }
   50% {
     transform: translateX(10px); /* Move para a direita */
   }
   100% {
-    transform: translateX(-10px); /* Volta para a esquerda */
+    transform: translateX(-20px); /* Volta para a esquerda */
   }
 }
 
