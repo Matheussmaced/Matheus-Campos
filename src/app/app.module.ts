@@ -12,6 +12,15 @@ import { ProjectComponent } from './components/project/project.component';
 import { WorkComponent } from './components/work/work.component';
 import { CommonModule } from '@angular/common';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutBodyComponent },
+  { path: 'work', component: WorkComponent },
+  { path: 'contacts', component: ContactsComponent },
+];
 
 @NgModule({
   declarations: [
@@ -22,14 +31,20 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     AboutBodyComponent,
     ProjectComponent,
     WorkComponent,
-    ContactsComponent
+    ContactsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LucideAngularModule.pick({ MapPin, Check, Github, Instagram, Phone, Menu, ExternalLink, Mail, }),
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    })
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

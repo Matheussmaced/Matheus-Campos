@@ -1,0 +1,52 @@
+@use '../../../theme/variables.scss' as *;
+
+main{
+  h3{
+    color: $gray-dark-600;
+    text-align: center;
+    font-weight: 300;
+
+    margin: 4rem 0 1rem;
+  }
+}
+
+.icons-skills{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+
+  justify-items: center;
+  align-items: center;
+
+  .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+
+    gap: 1rem;
+
+    img{
+      margin: 0 auto;
+    }
+
+    span{
+      width: 5rem;
+      text-align: center;
+    }
+
+    .express{
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 1330px) {
+  .icons-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

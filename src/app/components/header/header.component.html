@@ -5,10 +5,10 @@
 
   <div class="navigation-container">
     <nav class="nav-bar-desktop">
-      <a href="">Sobre</a>
-      <a href="">Trabalho</a>
-      <a href="">Tecnologias</a>
-      <a href="">Contatos</a>
+      <a routerLink="" fragment="about-header">Sobre</a>
+      <a routerLink="" fragment="work">Trabalho</a>
+      <a routerLink="" fragment="skills">Tecnologias</a>
+      <a routerLink="" fragment="contacts">Contatos</a>
     </nav>
   </div>
   <lucide-icon name="menu" id="menu-burguer" size="35" (click)="openMenu()"></lucide-icon>
@@ -21,10 +21,10 @@
         <div class="logo">
           <img src="../LOGO-MATHEUS.png" alt="" width="70">
         </div>
-        <a href="" id="first-a">Sobre</a>
-        <a href="">Trabalho</a>
-        <a href="">Tecnologias</a>
-        <a href="">Contatos</a>
+        <a routerLink="" fragment="about-header" id="first-a" (click)="closeMenu()">Sobre</a>
+        <a routerLink="" fragment="work" (click)="closeMenu()">Trabalho</a>
+        <a routerLink="" fragment="skills" (click)="closeMenu()">Tecnologias</a>
+        <a routerLink="" fragment="contacts" (click)="closeMenu()">Contatos</a>
       </nav>
     </div>
   </div>

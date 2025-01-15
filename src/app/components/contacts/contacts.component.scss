@@ -2,12 +2,15 @@
 
 main{
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
+
+  background-color: $gray-dark-50;
 
   h3{
     width: 40rem;
     margin: 0 auto 2rem auto;
     font-weight: 200;
+    padding-top: 1rem;
 
     color: $gray-light-400;
   }
@@ -58,5 +61,9 @@ main{
 
    justify-content: center;
    font-size: 1.3rem;
+  }
+
+  p{
+    width: 100%;
   }
 }
